@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Geeek For Geeks Survey Form</h1>
+
+    <div class="container">
+        <form action="get" id="form">
+
+            <label for="name">Name</label>
+            <br />
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <br />
+            
+
+            <label for="email">Email</label>
+            <br />
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <br />
+
+            <label for="age">Age</label>
+            <br />
+            <input type="number" name="age" id="age" placeholder="Enter your age">
+            <br />
+
+            <label for="experience">Which option best describes you?</label>
+            <br />
+            <select name="experience" id="experience">
+                <option value="choose">Select as per your level</option>
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="experienced">Experienced</option>
+            </select>
+            <br />
+
+            <label for="recomend">Would you recomend GeeksforGeeks to a friend?</label>
+            <br />
+            <input type="radio" name="recomend" id="yes" value="yes"> 
+            <label for="yes">Yes</label>
+            <br />
+
+            <input type="radio" name="recomend" id="no" value="no">
+            <label for="no">No</label>
+            <br />
+
+            <input type="radio" name="recomend" id="maybe" value="maybe">
+            <label for="maybe">Maybe</label>
+            <br />
+
+            <label for="languages">Languages and frameworks know (select all that apply)</label>
+            <br />
+            <input type="checkbox" name="c" id=""> <label for="">C</label>
+            <br />
+            <input type="checkbox" name="" id=""> <label for="">C++</label>
+            <br />
+            <input type="checkbox" name="" id=""> <label for="">C#</label>
+            <br />
+            <input type="checkbox" name="" id=""> <label for="">Java</label>
+            <br />
+            <input type="checkbox" name="" id=""> <label for="">Python</label>
+            <br />
+            <input type="checkbox" name="" id=""> <label for="">JavaScript</label>
+            <br />
+            <input type="checkbox" name="" id=""> <label for="">React</label>
+            <br />
+            <input type="checkbox" name="" id=""> <label for="">Angular</label>
+            <br />
+            <input type="checkbox" name="" id=""> <label for="">Django</label>
+            <br />
+            <input type="checkbox" name="" id=""> <label for="">Spring</label>
+            <br />
+
+            <label for="message">Any comments or suggestions</label>
+            <br />
+            <textarea name="message" id="message" placeholder="write your message or suggestions over here..." cols="45" rows="5" ></textarea>
+
+            <button type="submit" value="submit" class="btn" >Submit</button>
+
+        </form>
+
+        <button class="dark-btn" id="dark-btn" onclick="Dark()">Dark</button>
+        <button class="light-btn" id="light-btn" style="display: none;" onclick="Light()">Light</button>
+
+        
+    </div>
+
+    <footer>
+        <p>All copyright reserved</p>
+        <p>Developed by Dakhani Usman - 2024</p>
+        <p>This website is developed only for the purpose of practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
